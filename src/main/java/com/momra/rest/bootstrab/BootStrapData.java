@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.momra.rest.model.Customer;
+import com.momra.rest.model.entities.Customer;
 import com.momra.rest.repositories.CustomerRespository;
 
 @Component
@@ -26,6 +26,7 @@ public class BootStrapData  implements CommandLineRunner{
 		customer3.setFirstName("Mahmoud");
 		customer3.setLastName("Zaki");
 		customerRespository.save(customer3);
+		
 		
 		
 	}
